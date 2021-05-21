@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Pick Me button",
+  "version": "1.0",
+
+  "description": "Select random assignee in the acticve sprints view",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.atlassian.net/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
